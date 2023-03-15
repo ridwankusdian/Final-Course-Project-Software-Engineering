@@ -1,0 +1,60 @@
+--------------------PSEUDOCODE SISTEM KASIR--------------------
+
+START
+
+INPUT kode_barang
+INPUT nama_barang
+INPUT harga_barang
+INPUT jumlah_barang
+INPUT jumlah_harga
+INPUT bayar
+INPUT kembali
+
+PRINT "Selamat Datang di Toko Sumber Murah"
+PRINT "Kode Barang : ", kode_barang
+PRINT "Nama Barang : ", nama_barang
+PRINT "Harga Barang : ", harga_barang
+PRINT "Jumlah Barang : ", jumlah_barang
+PRINT "Jumlah Harga : ", jumlah_harga
+PRINT "Bayar : ", bayar
+PRINT "Kembali : ", kembali
+
+READ kode_barang
+IF kode_barang >< "2023aaa" or >< "2023bbb" or >< "2023ccc" or >< "2023ddd" or >< "2023eee" then
+   PRINT ("Kode Salah")
+END IF
+ELSE
+IF kode_barang = "2023aaa" then
+   SET nama_barang = Minyak
+   SET harga_barang = 15000
+END IF
+IF kode_barang = "2023bbb" then
+   SET nama_barang = Gula
+   SET harga_barang = 13000
+END IF
+IF kode_barang = "2023ccc" then
+   SET nama_barang = Beras
+   SET harga_barang = 10000
+END IF
+IF kode_barang = "2023ddd" then
+   SET nama_barang = Sabun
+   SET harga_barang = 3000
+END IF
+IF kode_barang = "2023eee" then
+   SET nama_barang = Pasta Gigi
+   SET harga_barang = 5000
+END IF
+READ jumlah_barang
+   SET jumlah_harga = harga_barang*jumlah_barang
+READ bayar
+   SET kembali = bayar-jumlah_harga
+
+PRINT kode_barang
+PRINT nama_barang
+PRINT harga_barang
+PRINT jumlah_barang
+PRINT jumlah_harga
+PRINT bayar
+PRINT kembali
+
+END
